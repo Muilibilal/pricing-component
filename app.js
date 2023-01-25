@@ -49,8 +49,10 @@ data.forEach((datum) => {
     if (range.value == datum.range) {
       if (myCheckbox.checked == true) {
         price.textContent = datum.yearPrice;
+        duration.textContent = "/year";
       } else {
         price.textContent = datum.monthPrice;
+        duration.textContent = "/month";
       }
 
       pageViews.textContent = datum.views;
